@@ -6,7 +6,7 @@
     <title>Receipt</title>
     <style>
         body{
-            background-color: #e9e3e3	;
+            background-color: hsl(0, 75%, 97%)	;
         }
         .brand-logo{
             height:150px ;
@@ -22,7 +22,7 @@
     height: 100%;
     border: 1px solid rosybrown;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: hsl(0, 27%, 96%);
     padding: 10px;
     border-radius:5px ;
     box-shadow:0 0 10px rgba(0,0,0,0,2) ;
@@ -62,6 +62,17 @@ border-bottom:1px dashed;
     text-align: right;
     margin-top: 100px;
 }
+.stamp{
+    width: 150px;
+    position: absolute;
+    right: 0;
+    bottom:19.5px ;
+    transform: rotate(-9deg);
+
+}
+.receipt-body{
+    position: relative;
+}
     </style>
 </head>
 <body>
@@ -70,7 +81,7 @@ border-bottom:1px dashed;
 
     <div class="receipt-header">
         <img src="./logo/logo.png"class="brand-logo"/>
-        <h2 class="brand-title">my fitness</h2>
+        <h2 class="brand-title">My fitness</h2>
 <p class="brand-address">
     3XF9+WW7,MIHAN Road,<br/>
     near Sant Gadge Collage <br/>
@@ -109,6 +120,8 @@ border-bottom:1px dashed;
         Payment Date:
     </div>
     <div class="receipt-details-value">1/8/2025</div>
+    </div>
+    <img src="./logo/stamp.webp" class="stamp"/>
 <p class="Accountant-signature">
     Accountant signature
 </p>
